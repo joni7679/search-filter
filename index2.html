@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore India</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            width: 100%;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        main {
+            height: 100vh;
+            background: url('background.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        main .hero {
+            text-align: center;
+        }
+
+        main .hero h1 {
+            font-size: 50px;
+            margin: 10px 0;
+        }
+
+        main .hero h2 {
+            font-size: 30px;
+            margin: 10px 0;
+        }
+
+        main .location-input {
+            margin-top: 20px;
+        }
+
+        main .location-input input {
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+        }
+
+        main .location-input button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            background: #ff9800;
+            color: white;
+            cursor: pointer;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Explore India Logo">
+            <h1>EXPLORE INDIA</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Maps</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <h2>HELLO FRIENDS</h2>
+            <h1>WELCOME TO INDIA</h1>
+            <div class="location-input">
+                <input type="text" placeholder="Enter your current location">
+                <button>SUBMIT</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Add footer content if needed -->
+    </footer>
+
+    <script>
+        document.querySelector('button').addEventListener('click', () => {
+            const location = document.querySelector('input').value;
+            if (location) {
+                alert(`Location submitted: ${location}`);
+            } else {
+                alert('Please enter your location');
+            }
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.search-option {
+    border-radius: 16px;
+    top: 90%;
+    position: absolute;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    z-index: 9;
+    /* height: 300px; */
+    /* display: none; */
+
+    left: 190px;
+}
+
+.search-list {
+    padding: 20px;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.nav-item {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.icon-container {
+    position: relative;
+    margin-right: 20px;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.icon {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Placeholder for icons */
+.bell-icon::before {
+    content: '\1F514';
+    /* Unicode character for bell icon */
+}
+
+.message-icon::before {
+    content: '\1F4AC';
+    /* Unicode character for message icon */
+}
+
+.overly {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.product-container {
+    max-width: 1520px;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.product {
+    width: 300px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    overflow: hidden;
+}
+
+.product-img {
+    width: 100%;
+    height: 200px;
+
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-describction {
+    padding: 8px;
+}
